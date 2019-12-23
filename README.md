@@ -9,7 +9,7 @@ The easiest way is to keep `wdio-slack-service` as a devDependency in your `pack
 ```json
 {
   "devDependencies": {
-    "wdio-slack-service": "2.0.0"
+    "wdio-slack-service": "2.0.6"
   }
 }
 ```
