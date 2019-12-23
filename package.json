@@ -1,6 +1,6 @@
 {
   "name": "wdio-slack-service",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "WebdriverIO service for Slack Integration",
   "author": "Carmen Mitru <carmen.mitru@gmail.com>",
   "homepage": "https://github.com/carmenmitru/wdio-slack-service",
