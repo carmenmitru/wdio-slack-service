@@ -1,7 +1,6 @@
-
-import { IncomingWebhook } from "@slack/webhook"
+const { IncomingWebhook } = require("@slack/webhook");
 const failedColor = "#E51670";
-export default class SlackService {
+class SlackService {
     constructor(config) {
         this.config = config;
         if (!this.config.webhook) {
@@ -12,10 +11,7 @@ export default class SlackService {
         }
         this.webhook = new IncomingWebhook(this.config.webhook);
         this.message = this.config.message;
-
-        this.executionTime = 0;
         this.attachments = [];
-        this.attach = {};
     }
 
     afterTest(test) {
@@ -36,3 +32,4 @@ export default class SlackService {
     }
 }
 
+module.exports = SlackService;
