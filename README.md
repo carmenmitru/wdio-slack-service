@@ -4,12 +4,12 @@
 
 ## Installation
 
-The easiest way is to keep `@wdio/slack-service` as a devDependency in your `package.json`.
+The easiest way is to keep `wdio-slack-service` as a devDependency in your `package.json`.
 
 ```json
 {
   "devDependencies": {
-    "@wdio/slack-service": "^5.0.0"
+    "wdio-slack-service": "2.0.0"
   }
 }
 ```
@@ -17,7 +17,7 @@ The easiest way is to keep `@wdio/slack-service` as a devDependency in your `pac
 You can simple do it by:
 
 ```bash
-npm install @wdio/slack-service --save-dev
+npm install wdio-slack-service --save-dev
 ```
 
 Instructions on how to install `WebdriverIO` can be found [here.](https://webdriver.io/docs/gettingstarted.html)
