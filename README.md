@@ -40,7 +40,6 @@ export.config = {
       webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
     }],
   ],
-  ],
 };
 ```
 
