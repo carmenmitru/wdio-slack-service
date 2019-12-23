@@ -55,12 +55,11 @@ For notifications to be sent `webhook` option should atleast be set.
 
 ```js
 // wdio.conf.js
-module.exports = {
-  reporters: [
-    "slack",
-    {
-      webhook: process.env.SLACK_WEBHOOK
-    }
-  ]
+export.config = {
+  services: : [
+    [slack, {
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+    }],
+  ],
 };
 ```
