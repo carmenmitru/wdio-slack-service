@@ -23,13 +23,24 @@ npm install wdio-slack-service --save-dev
 Instructions on how to install `WebdriverIO` can be found [here.](https://webdriver.io/docs/gettingstarted.html)
 
 ## Configuration
+At the top of the wdio.conf.js-file, add:
+ 
+```js
+// wdio.conf.js
+var slack = require('wdio-slack-service');
+```
 
 In order to use the service you need to add slack to your services array in wdio.conf.js
 
 ```js
 // wdio.conf.js
 export.config = {
-  services: ['slack'],
+  services: : [
+    [slack, {
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+    }],
+  ],
+  ],
 };
 ```
 
