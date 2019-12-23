@@ -1,6 +1,6 @@
 {
-  "name": "@wdio/slack-service",
-  "version": "1.0.0",
+  "name": "wdio-slack-service",
+  "version": "2.0.0",
   "description": "WebdriverIO service for Slack Integration",
   "author": "Carmen Mitru <carmen.mitru@gmail.com>",
   "homepage": "https://github.com/carmenmitru/wdio-slack-service",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/webdriverio/webdriverio.git"
+    "url": "git://github.com/carmenmitru/wdio-slack-service.git"
   },
   "keywords": [
     "webdriverio",
@@ -29,7 +29,7 @@
     "wdio-service"
   ],
   "bugs": {
-    "url": "https://github.com/webdriverio/webdriverio/issues"
+    "url": "https://github.com/carmenmitru/wdio-slack-service/issues"
   },
   "peerDependencies": {
     "@wdio/cli": "5.0.0",
