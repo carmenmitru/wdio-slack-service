@@ -1,6 +1,6 @@
 {
   "name": "wdio-slack-service",
-  "version": "2.0.4",
+  "version": "2.0.7",
   "description": "WebdriverIO service for Slack Integration",
   "author": "Carmen Mitru <carmen.mitru@gmail.com>",
   "homepage": "https://github.com/carmenmitru/wdio-slack-service",
@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/carmenmitru/wdio-slack-service/issues"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@wdio/cli": "5.0.0",
     "@slack/webhook": "5.0.2",
     "rimraf": "^3.0.0"

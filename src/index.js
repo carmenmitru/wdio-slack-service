@@ -10,8 +10,12 @@ class SlackService {
             return;
         }
         this.webhook = new IncomingWebhook(this.config.webhook);
-        this.message = this.config.message;
-        this.attachments = [];
+        this.message = this.config.message || "Running Tests Report";
+        this.attachments = [
+            {
+                pretext: `*${this.message}*`,
+            }
+        ];
     }
 
     afterTest(test) {
@@ -19,7 +23,8 @@ class SlackService {
             let attach = {
                 color: failedColor,
                 author_name: test.fullTitle,
-                footer: test.error.stack
+                footer: test.error.stack,
+                ts: Date.now()
             };
             this.attachments.push(attach);
         }
