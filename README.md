@@ -9,7 +9,7 @@ The easiest way is to keep `wdio-slack-service` as a devDependency in your `pack
 ```json
 {
   "devDependencies": {
-    "wdio-slack-service": "2.0.0"
+    "wdio-slack-service": "2.0.6"
   }
 }
 ```
@@ -23,13 +23,23 @@ npm install wdio-slack-service --save-dev
 Instructions on how to install `WebdriverIO` can be found [here.](https://webdriver.io/docs/gettingstarted.html)
 
 ## Configuration
+At the top of the wdio.conf.js-file, add:
+ 
+```js
+// wdio.conf.js
+var slack = require('wdio-slack-service');
+```
 
 In order to use the service you need to add slack to your services array in wdio.conf.js
 
 ```js
 // wdio.conf.js
 export.config = {
-  services: ['slack'],
+  services: : [
+    [slack, {
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+    }],
+  ],
 };
 ```
 
@@ -45,12 +55,11 @@ For notifications to be sent `webhook` option should atleast be set.
 
 ```js
 // wdio.conf.js
-module.exports = {
-  reporters: [
-    "slack",
-    {
-      webhook: process.env.SLACK_WEBHOOK
-    }
-  ]
+export.config = {
+  services: : [
+    [slack, {
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+    }],
+  ],
 };
 ```
