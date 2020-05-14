@@ -35,7 +35,7 @@ In order to use the service you need to add slack to your services array in wdio
 ```js
 // wdio.conf.js
 export.config = {
-  services: : [
+  services: [
     [slack, {
       webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
     }],
@@ -56,7 +56,7 @@ For notifications to be sent `webhook` option should atleast be set.
 ```js
 // wdio.conf.js
 export.config = {
-  services: : [
+  services: [
     [slack, {
       webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
     }],
