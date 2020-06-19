@@ -37,7 +37,9 @@ In order to use the service you need to add slack to your services array in wdio
 export.config = {
   services: [
     [slack, {
-      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",  
+      notifyOnlyOnFailure: true,     
+      message:'Test Report'   
     }],
   ],
 };
@@ -52,13 +54,16 @@ For notifications to be sent `webhook` option should atleast be set.
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |         |
 | webhook | URL - [Incoming webhook](https://api.slack.com/incoming-webhooks) of the slack channel to which notifications should be sent. If the URL is not configured, notifications will not be sent. |
-
+|notifyOnlyOnFailure|Set this option to true to send notifications only when there are test fail, else nothing will be sent.|
+|message| Title of text message which appears in the notification.|
 ```js
 // wdio.conf.js
 export.config = {
   services: [
     [slack, {
-      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",       
+      webhook: process.env.SLACK_WEBHOOK_URL || "https://hooks.slack.com/........",  
+      notifyOnlyOnFailure: true, 
+      message:'Test Report'   
     }],
   ],
 };
