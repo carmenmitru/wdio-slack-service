@@ -1,7 +1,7 @@
 # WebdriverIO Slack Service
 
 > A WebdriverIO service which sends notifications of test results to Slack.
-
+![Reporter](./docs/notification.png)
 ## Installation
 
 The easiest way is to keep `wdio-slack-service` as a devDependency in your `package.json`.
