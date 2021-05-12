@@ -96,7 +96,13 @@ class SlackService {
         if (test._currentRetry >= 0 && !results.passed) {
             --this.tests;
             if(test._currentRetry === test._retries || test._retries === -1) {
-                let testError = results.error.matcherResult.message().replace(/[\u001b\u009b][-[+()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, "");
+                let errorMessage;
+                if(error.matcherResult) {
+                    errorMessage = error.matcherResult.message();
+                } else {
+                    errorMessage = error.toString();
+                }
+                let testError = errorMessage.replace(/[\u001b\u009b][-[+()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, "");
                 ++this.failedTests;
                 ++this.tests;
                 const attach = failedAttachment(test, testError.toString(), results);
