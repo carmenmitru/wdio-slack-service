@@ -1,4 +1,4 @@
-# Wbdriverio Slack Service
+# Webdriverio Slack Service
 Webdriverio library to send test results as a slack notification/message to channels
 
 ## Installation
