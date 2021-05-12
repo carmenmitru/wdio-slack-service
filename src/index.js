@@ -97,10 +97,10 @@ class SlackService {
             --this.tests;
             if(test._currentRetry === test._retries || test._retries === -1) {
                 let errorMessage;
-                if(error.matcherResult) {
-                    errorMessage = error.matcherResult.message();
+                if(results.error.matcherResult) {
+                    errorMessage = results.error.matcherResult.message();
                 } else {
-                    errorMessage = error.toString();
+                    errorMessage = results.error.toString();
                 }
                 let testError = errorMessage.replace(/[\u001b\u009b][-[+()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, "");
                 ++this.failedTests;
