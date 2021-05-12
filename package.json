@@ -32,11 +32,15 @@
     "url": "https://github.com/carmenmitru/wdio-slack-service/issues"
   },
   "dependencies": {
-    "@wdio/cli": "5.0.0",
-    "@slack/webhook": "5.0.2",
+    "@slack/webhook": "^6.0.0",
+    "@wdio/cli": "^7.5.7",
     "rimraf": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "contributors": [
+    "Carmen Mitru <carmen.mitru@gmail.com>",
+    "Vinod Reddy <vinodkumarv8197@gmail.com>"
+  ]
 }
