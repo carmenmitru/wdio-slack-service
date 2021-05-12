@@ -89,14 +89,14 @@ class SlackService {
         
     }
     
-    async afterTest(test, context, results) {
+    afterTest(test, context, results) {
         ++this.tests;
         this.testTitle = test.title;
         if (this.tests <= 1) this.testNameFull = test.parent || test.fullName;
         if (test._currentRetry >= 0 && !results.passed) {
             --this.tests;
             if(test._currentRetry === test._retries || test._retries === -1) {
-                let testError = await results.error.matcherResult.message().replace(/[\u001b\u009b][-[+()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, "");
+                let testError = results.error.matcherResult.message().replace(/[\u001b\u009b][-[+()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, "");
                 ++this.failedTests;
                 ++this.tests;
                 const attach = failedAttachment(test, testError.toString(), results);
