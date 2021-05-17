@@ -1,4 +1,4 @@
-# wdio-slacknotify-service
+# Webdriverio Slack Service
 Webdriverio library to send test results as a slack notification/message to channels
 
 ## Installation
@@ -23,8 +23,6 @@ Instructions on how to install `WebdriverIO` can be found [here.](https://webdri
 
 ## Configuration
 
-### Currently, this package supports `mocha` and `jasmine` frameworks only
-
 At first, import the service to wdio config file `wdio.conf.js`
 
 ```js
@@ -48,6 +46,19 @@ export.config = {
         }]
 }
 ```
+## Features
+
+- Send notification irrespective of test results
+- Send notification only on test failure
+- Support for `mocha`, `jasmine` and `cucumber`
+- Retry/Rerun tests will be logged with addional info
+- Test duration info
+- Error details
+- Cucumber scenario/step reporting
+- Browser and Version info
+
+## How it works
+For `mocha`/`jasmine`, notification will be sent on spec level and for `cucumber`, it will be on feature level. Let's say, if you have 10 spec/feature files, you will receive 10 notifications as it is triggered in `after` hook
 
 ## Options
 
@@ -78,6 +89,14 @@ Optional: `YES` <br/>
 Default: `Webdriverio Slack Reporter`
 
 ## Screenshots
+
+### Cucumber Pass/Fail
+
+![Cucumber Pass/fail](./assets/cucumber.PNG)
+
+### Cucumber Retry
+
+![Cucumber Retry](./assets/cucumberretry.PNG)
 
 ### All Pass
 
