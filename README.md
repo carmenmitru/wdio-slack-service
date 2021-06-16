@@ -92,11 +92,11 @@ Default: `Webdriverio Slack Reporter`
 
 ### Cucumber Pass/Fail
 
-![Cucumber Pass/fail](/assets/cucumber.PNG)
+![Cucumber Pass/fail](/assets/Cucumber.PNG)
 
 ### Cucumber Retry
 
-![Cucumber Retry](/assets/cucumberretry.PNG)
+![Cucumber Retry](/assets/Cucumberretry.PNG)
 
 ### All Pass
 
