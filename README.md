@@ -44,7 +44,7 @@ export.config = {
             notifyOnlyOnFailure: true, // Send notification only on test failure
             messageTitle: "<NOTIFICATION_TITLE>" // Name of the notification
         }]
-}
+]
 ```
 ## Features
 
@@ -92,27 +92,27 @@ Default: `Webdriverio Slack Reporter`
 
 ### Cucumber Pass/Fail
 
-![Cucumber Pass/fail](./assets/cucumber.PNG)
+![Cucumber Pass/fail](/assets/cucumber.PNG)
 
 ### Cucumber Retry
 
-![Cucumber Retry](./assets/cucumberretry.PNG)
+![Cucumber Retry](/assets/cucumberretry.PNG)
 
 ### All Pass
 
-![All Pass](./assets/allpass.PNG)
+![All Pass](/assets/allpass.PNG)
 
 ### Fail Pass
 
-![Fail Pass](./assets/failpass.PNG)
+![Fail Pass](/assets/failpass.PNG)
 
 ### Retry Failed
 
-![Retry Failed](./assets/retryfail.PNG)
+![Retry Failed](/assets/retryfail.PNG)
 
 ### Retry Passed
 
-![Retry Passed](./assets/retrypassed.PNG)
+![Retry Passed](/assets/retrypassed.PNG)
 
 ---
 
