@@ -92,27 +92,27 @@ Default: `Webdriverio Slack Reporter`
 
 ### Cucumber Pass/Fail
 
-![Cucumber Pass/fail](/assets/Cucumber.PNG)
+![Cucumber Pass/fail](/assets/Cucumber.PNG?raw=true)
 
 ### Cucumber Retry
 
-![Cucumber Retry](/assets/Cucumberretry.PNG)
+![Cucumber Retry](/assets/Cucumberretry.PNG?raw=true)
 
 ### All Pass
 
-![All Pass](/assets/allpass.PNG)
+![All Pass](/assets/allpass.PNG?raw=true)
 
 ### Fail Pass
 
-![Fail Pass](/assets/failpass.PNG)
+![Fail Pass](/assets/failpass.PNG?raw=true)
 
 ### Retry Failed
 
-![Retry Failed](/assets/retryfail.PNG)
+![Retry Failed](/assets/retryfail.PNG?raw=true)
 
 ### Retry Passed
 
-![Retry Passed](/assets/retrypassed.PNG)
+![Retry Passed](/assets/retrypassed.PNG?raw=true)
 
 ---
 
